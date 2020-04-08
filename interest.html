@@ -1,0 +1,42 @@
+<html>
+ <head>
+   <script>
+       var details = [{ Principal : 2500, time: 1.8},
+        { Principal : 1000, time: 5}
+        { Principal : 3000, time: 1}
+        { Principal : 2000, time: 3}
+        ];
+       function interestcalculator(details)
+       {
+         for (let i=0; i<details.length; i++) {
+           if (details[i].principal>=2500&&details[i].time > 1 && details[i].time < 3)
+           details[i].rate = 3
+         }
+         {
+           else if (details[i].principal >= 2500 &&details[i].time>=3)
+           details[i].rate =4;
+         }
+          else if (details[i].principal < 2500 && dettails[i].time <=1)
+          details[i].rate = 2{
+            else {
+              details[i].rate= 1
+            }
+          }
+         { 
+         }
+           p = document.getElementById("p").value;
+           t = document.getElementById("t").value;
+           r = document.getElementById("r").value;
+           result = document.getElementById("result").value;
+           result.innerHTML= "The interest is" + (p*n*r/100);
+       }
+   </script>
+   <body>
+     Principal Amount: <input id="p"></br>
+     Rate: <input id="r"></br>
+     time: <input id="t"></br>
+     <button onClick="interestcalculator()">Calculate</button>
+     <p id="result"></p>
+   </body>
+ </head>
+</html>
